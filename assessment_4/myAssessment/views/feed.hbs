@@ -1,0 +1,97 @@
+<div >
+    <nav class="navbar navbar-expand-lg navbar-light background-color = #003366">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white" href="/">
+                <img src="http://www.hdicon.com/wp-content/uploads/2010/07/nba.png" width="50" height="50">
+                <b>NBA</b>
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/scores#/">Scores
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item acitive ">
+                    <a class="nav-link text-white" href="https://stats.nba.com/schedule/">Schedule</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/news">News</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://watch.nba.com/video/">Video</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/nbatv">NBA TV</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/players">Players</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/teams">Teams</a>
+                </li>
+                <li class="nav-item  acitive">
+                    <a class="nav-link text-white" href="https://www.nba.com/preview#/">Season Preview</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="card col-md-6">
+            <br>
+            {{!-- maxlength="280">: 设置文本框最大输入字符限制 --}}
+            <textarea class="form-control" rows='3' , cols="50" id="inputPost" placeholder="Got something to say?"
+                maxlength="280"></textarea>
+            <label id="charRemaining" for="inputPost">280</label>
+            <div class="row">
+                {{!-- class="col-md-3": 每列间隔为3个单位 --}}
+                <div class="col-md-3">
+                    {{!-- Camera Icon --}}
+                    <i class="fa fa-camera-retro fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <!--Video Icon-->
+                    <i class="fas fa-video fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <!--Bar Chart Icon-->
+                    <i class="fa fa-chart-bar fa-lg"></i>
+                </div>
+                <div class="col-md-3">
+                    <button type="text" id="postBtn" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+            </br>
+        </div>
+    </div>
+    {{!-- Add HTML to display comments --}}
+    {{!-- We will place the comments retrieved from the server in this div --}}
+    {{!-- 我们将从服务器中检索的comments放在这个div中 --}}
+    <div id="feedPosts">
+
+    </div>
+</div>
+{{!-- <div class="row justify-content-md-center pt-4">
+    <div class="card col-md-6">
+        <div class="row">
+            <div class="col-md-9">
+                This is my post
+            </div>
+            <div class="col-md-3">
+                <button type="button" name="59fa36babae16f3e2fd40951" class="btn btn-danger">
+                    Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div> --}}

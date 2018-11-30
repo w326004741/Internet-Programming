@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-light background-color = #003366">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand text-white" href="/">
+            <img src="http://www.hdicon.com/wp-content/uploads/2010/07/nba.png" width="50" height="50">
+            <b>NBA</b>
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/scores#/">Scores
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item acitive ">
+                <a class="nav-link text-white" href="https://stats.nba.com/schedule/">Schedule</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/news">News</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://watch.nba.com/video/">Video</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/nbatv">NBA TV</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/players">Players</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/teams">Teams</a>
+            </li>
+            <li class="nav-item  acitive">
+                <a class="nav-link text-white" href="https://www.nba.com/preview#/">Season Preview</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<br>
+
+{{!-- form commentBox --}}
+<form id="commentBox">
+    <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="@myuser">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Comment<br>Area</span>
+            </div>
+            <textarea id="commentArea" rows="5" class="form-control" aria-label="Comment Area" placeholder="Enter your comment in here..."></textarea>
+        </div>
+    </div>
+    <br>
+</form>
+{{!-- Post Button --}}
+<button id='button1' type="button" class="btn btn-primary" onclick="post();">Post</button>
+{{!-- Comment Card --}}
+<div class="card">
+    <div class="card-header">
+        <b style="color:dodgerblue">Comments</b>
+    </div>
+    {{!-- Comment Block here --}}
+    <p class="card-body" id="commentBlock"></p>
+</div>
